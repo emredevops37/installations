@@ -1,3 +1,5 @@
+Bu script, Ubuntu 22.04 sistemlerde Docker'ı tek komutla kurmanızı sağlar.
+
 📥 Kurulum
 
 Scripti doğrudan çalıştırmak için:
