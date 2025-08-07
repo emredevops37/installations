@@ -1,0 +1,13 @@
+version: '3'
+services:
+  nexus:
+    image: sonatype/nexus3
+    container_name: nexus
+    ports:
+      - "8081:8081"   # Nexus UI
+      - "5000:5000"   # Docker Registry (Opsiyonel)
+    volumes:
+      - "/data/nexus:/nexus-data"  # Host Path Volume
+    environment:
+      - INSTALL4J_ADD_VM_PARAMS=-Xms1g -Xmx2g  # JVM Memory Ayarları (Opsiyonel)
+    restart: unless-stopped
