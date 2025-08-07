@@ -67,13 +67,4 @@ docker login localhost:8080
 # Username: admin
 # Password: Harbor12345
 docker push localhost:8080/testproject/nginx:alpine
-
-
-
-
-
-
-
-
-
-
+```
